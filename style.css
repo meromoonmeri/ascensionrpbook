@@ -159,35 +159,129 @@ p {
     font-family: 'Cinzel', serif;
 }
 
-/* --- Special Elements --- */
-.rank-list {
+
+/* --- Fiche Technique "Image #1" Style --- */
+.tech-sheet {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #d4af37;
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+.tech-left-col {
+    padding: 2rem;
+    border-right: 2px solid #d4af37;
+}
+
+.tech-right-col {
+    background: #0a0a0a;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Sections */
+.section-header {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d4af37;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 2rem 0;
 }
 
-.rank-item {
-    border: var(--border-gold);
-    padding: 1rem;
+.tech-name-header {
     text-align: center;
-    min-width: 60px;
-    background: rgba(0,0,0,0.5);
     font-family: 'Cinzel', serif;
-    transition: all 0.3s ease;
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
-.rank-item:hover {
-    background: var(--accent-purple);
-    color: white;
-}
-
-.footnote {
-    font-size: 0.85rem;
+.tech-image-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #1a1a1a;
+    border: 1px solid #d4af37;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
     font-style: italic;
-    color: var(--text-dim);
-    border-top: 1px solid #333;
-    margin-top: 2rem;
+}
+
+/* Data Table */
+.data-general-title {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-top: 1px solid #d4af37;
     padding-top: 1rem;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.data-table td {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+.data-label {
+    color: #d4af37;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 40%;
+    background: #050505;
+}
+
+/* Detailed Content */
+.content-block {
+    margin-bottom: 2.5rem;
+}
+
+.content-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #ccc;
+    text-align: justify;
+}
+
+.list-item {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.bullet-dot {
+    color: #d4af37;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.bullet-number {
+    color: #d4af37;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.bullet-cross {
+    color: #ff4d4d;
+    margin-right: 10px;
+    font-weight: bold;
 }
